@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EDM Portfolio - Munoz J.</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at center, #1a0023 0%, #000010 100%);
+      color: white;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .stars, .twinkling {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: transparent;
+      pointer-events: none;
+      z-index: -2;
+    }
+
+    .stars {
+      background: url('https://i.pinimg.com/originals/8e/ff/81/8eff81d46686e3c82c64565eb09393b9.gif') repeat;
+      animation: moveStars 200s linear infinite;
+      opacity: 0.4;
+    }
+
+    .twinkling {
+      background: url('https://i.pinimg.com/originals/9d/ae/5b/9dae5b6660df771fb2072b504603fc31.gif') repeat;
+      animation: moveTwinkling 100s linear infinite;
+      opacity: 0.2;
+    }
+
+    @keyframes moveStars {
+      from {background-position: 0 0;}
+      to {background-position: -10000px 5000px;}
+    }
+
+    @keyframes moveTwinkling {
+      from {background-position: 0 0;}
+      to {background-position: 10000px 5000px;}
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+      color: #fbc9ff;
+      text-shadow: 0 0 8px #ff8be3, 0 0 15px #ff8be3;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      color: #cbaeff;
+      animation: glowText 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glowText {
+      from { text-shadow: 0 0 10px #cfaaff, 0 0 20px #a58bff, 0 0 30px #6e59ff; }
+      to { text-shadow: 0 0 20px #ffd4fa, 0 0 35px #c38aff, 0 0 45px #8a4dff; }
+    }
+
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.06);
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 20px rgba(200, 150, 255, 0.3);
+      backdrop-filter: blur(8px);
+    }
+
+    h2 {
+      color: #99caff;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 8px #a2d0ff;
+    }
+
+    a {
+      color: #ffa6e3;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 5px #ffb3f1;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+<!-- Interstellar Theme Audio -->
+  <audio autoplay loop>
+    <source src="https://ia801308.us.archive.org/28/items/interstellar-main-theme-hans-zimmer/Interstellar%20Main%20Theme%20-%20Hans%20Zimmer.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <header>
+    <h1># EDM-Portfolio - Munoz J.</h1>
+    <p>Welcome to my portfolio! This repository showcases my work on various Enterprise Data Management (EDM) lab tasks.<br>These projects reflect my understanding and hands-on experience with data management principles.</p>
+  </header>
+
+  <section>
+    <h2>👨‍💻 About Me</h2>
+    <p>Hi there! I'm Justine Muñoz, an 18-year-old aspiring IT professional from Angeles City, Pampanga. Currently, I’m pursuing a Bachelor of Science in Information Systems at the City College of Angeles. </p>
+    <p>I'm passionate about data management, system analysis, and finding efficient ways to manage and utilize data in real-world applications. Feel free to explore my work and connect with me!</p>
+    <p>When I'm not immersed in tech, I love listening to R&B and pop songs, especially from SZA and Ariana Grande. Their music is my therapy, helping me unwind and stay motivated.</p>
+  </section>
+
+  <section>
+    <h2>🎓 Education</h2>
+    <ul>
+      <li>College: Bachelor of Science in Information Systems - Ongoing (CCA)</li>
+      <li>High School: Gov. Rafael L. Lazatin Integrated School</li>
+      <li>Elementary: Pulung Cacutud Elementary School</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📁 My Midterm Projects</h2>
+    <ul>
+      <li><a href="https://munoz-24-0431.github.io/Midterm-Lab-Task-1/">Midterm Lab Task 1: Data Cleaning and Preparation using Excel</a></li>
+      <li><a href="https://munoz-24-0431.github.io/Midterm-Lab-Task-3/">Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</a></li>
+      <li><a href="https://munoz-24-0431.github.io/Midterm-Lab-Task-3/">Midterm Lab Task 3: Creating Pivot Table and Dashboard</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📂 My Final Projects</h2>
+    <ul>
+      <li><a href="https://munoz-24-0431.github.io/Finals-Lab-Task-1-/">Final Lab Task 1: MySQL Basics</a></li>
+      <li><a href="https://munoz-24-0431.github.io/Finals-Lab-Task-2/">Final Lab Task 2: Transforming ER Model to Relational Tables</a></li>
+      <li><a href="https://munoz-24-0431.github.io/Finals-Lab-Task-3/">Final Lab Task 3: Table Manipulation</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    Made with stardust ✨ | &copy; 2025 Justine Muñoz
+  </footer>
+</body>
+</html>
